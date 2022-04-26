@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Dogs&Cats</title>    
+    <link rel="shortcut icon" href="./img/letrero.png">
+    <link rel="stylesheet" href="../Proyecto/css/stylesheet.css">
+    <link rel="stylesheet" href="../Proyecto/css/responsive.css">
+    
+</head>
+
+<body>
+    <header>
+        
+        <div class="encabezado">
+            <div class="contenedor_busqueda">
+                <input class="busqueda" type="text" name="search" placeholder="Búsqueda..">
+            </div>
+            <div class="logo">
+                <img class= "logo_cafeteria" src="./img/taza-de-cafe-caliente-redondeada-en-un-plato-de-vista-lateral.png" alt="logo cafeteria">
+            </div>
+            <div class="contenedor_titulo">
+                <h1 class="titulo_principal">Coffee Dogs&Cats</h1> 
+            </div>
+ 
+        </div>  
+        <nav class="navegacion">
+            <ul class="navegador">
+                <li class="opciones"><a class="item_nav" href="./index.html">Inicio</a></li>
+                <li class="opciones"><a class="item_nav" href="./pages/carta.html">Carta</a></li>
+                <li class="opciones"><a class="item_nav" href="./pages/Servicios.html">Servicios</a></li>
+                <li class="opciones"><a class="item_nav" href="./pages/contacto.html">Contacto</a></li>
+                <li class="opciones"><a class="item_nav" href="./pages/horario.html">Horario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor_imagen2">
+            <div class="contenedor_boton">
+                <button class="boton_reserva""><a class="btn" href="#reservar_hora">Reserva</a></button>
+            </div>
+        </div>
+        <div class= "quienes_somos">
+            <div class="imagenes_nosotros">
+                <div class="primeras_imagenes"> 
+                    <img class="imagen"src="./img/pexels-kelvin-valerio-617278.jpg" alt="gato">
+                    <img class="imagen" src="./img/pexels-johann-1254140.jpg" alt="Perro1">
+                </div> 
+                <div class="segundas_imagenes">
+                    <img class="imagen" src="./img/pexels-francesco-ungaro-193255.jpg" alt="gato2">
+                    <img class="imagen" src="./img/pexels-nancy-guth-850602.jpg" alt="perro2">
+                </div>               
+            </div>
+                         
+            <div class="contenido_nosotros">
+                <h2 class="titulo2">¿Quienes somos?</h2>
+                <p class="texto_parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie eros vel nibh placerat rhoncus. Ut pharetra eu magna at laoreet. Nullam condimentum mi nulla, a maximus erat consectetur ut. In pretium mauris sit amet orci finibus mattis. Donec imperdiet ullamcorper lacus vitae luctus. Duis efficitur, nulla ac fringilla mattis, metus nunc volutpat nisl, in vulputate arcu est ac magna. Pellentesque mollis risus eu diam ullamcorper, id porta ipsum rutrum. Fusce tortor nulla, semper tincidunt risus et, venenatis mollis velit. Nam mi purus, molestie sit amet suscipit eu, tincidunt non justo. Donec volutpat vehicula ante eget efficitur. Morbi facilisis nisl eget dui molestie posuere. Vestibulum aliquet neque augue, eget elementum velit posuere quis. Phasellus posuere consequat pretium. Maecenas sodales, metus non sodales feugiat, nibh nunc pulvinar est, eget porta purus lorem ut sem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum delectus vitae fuga quia odio debitis soluta optio, officia autem, dolore, in et temporibus sequi sapiente vero reiciendis a voluptate!</p>
+            </div>
+        </div>
+
+        <h2 class="titulo_reserva">Reserva aquí:</h2>
+        <div class="formulario_cita">
+            <form name="formulario" id="reservar_hora" method="post" action="/enviar.php">
+                <div class="datos_personales">
+                    <div class="nombre_apellido">
+                        <label for="nombre">Nombre: </label> <br>
+                        <input type="text" name="nombre" placeholder="Escriba su nombre"> <br><br>
+                        <label for="apellido">Apellido: </label> <br>
+                        <input type="text" name="apellido" placeholder="Escriba su apellido"> <br>
+                    </div> <br>
+                    <div class="fecha_hora">
+                        <label for="Reserva">Reserve su horario:</label> <br> 
+                        <input type="date" name="fecha" min="2022-03-28" max="2022-12-30" step="1">
+                        <input type="time" name="hora" min="09:00" max="21:00" step="3600">
+                    </div>
+                    <div class="input_enviar">
+                        <input class="boton_enviar" type="submit">
+                    </div>
+                </div>
+            </form>
+                <div class="contenedor_mapa"">
+                    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.4866913283768!2d-15.440635585088554!3d28.13166858261806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc409511253bdd39%3A0xa7217996a692c677!2sAv.%20Jos%C3%A9%20Mesa%20y%20L%C3%B3pez%2C%2035010%20Las%20Palmas%20de%20Gran%20Canaria%2C%20Las%20Palmas!5e0!3m2!1ses!2ses!4v1648294120337!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br><br>
+                </div>               
+        </div>
+    </main>
+
+    <footer>
+        <div class="enlaces_footer">
+            <h3><a class="enlace_footer" href="#">AVISO LEGAL</a></h3>
+            <h3><a class="enlace_footer" href="#">POLÍTICA DE PRIVACIDAD</a></h3>
+            <h3><a class="enlace_footer" href="#">CAMBIAR CONFIGURACIÓN DE COOKIES</a></h3>
+        </div>
+        <div class="derechos_reservados">
+            <p class="derechos">2022. Todos los derechos reservados.</p>
+        </div>
+        <div class="logos_rrss">
+            <img src="./img/instagram.png" alt="Logo Instagram">
+            <img src="./img/facebook.png" alt="Logo Facebook">
+            <img src="./img/signo-de-twitter.png" alt="Logo Twitter">
+        </div>
+    </footer>
+
+</body>
+</html>

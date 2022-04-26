@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/comunicar.png">
+    <link rel="stylesheet" href="../css/stylesheet.css"">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header><h1>Coffee Dogs&Cats</h1>
+        <hr>
+        <div class="fondo_marron"> </div>
+        <nav class="navegacion">
+            <ul class="navegador">
+                <li class="opciones"><a class="item_nav" href="../index.html">Inicio</a></li>
+                <li class="opciones"><a class="item_nav" href="../pages/carta.html">Carta</a></li>
+                <li class="opciones"><a class="item_nav" href="../pages/Servicios.html">Servicios</a></li>
+                <li class="opciones"><a class="item_nav" href="../pages/contacto.html">Contacto</a></li>
+                <li class="opciones"><a class="item_nav" href="../pages/horario.html">Horario</a></li>
+            </ul>
+        </nav>   
+    </header>
+    <main>
+        <div class="formulario_consulta">
+            <div class="titulo_contacto">
+                <h2 class="h2_contacto">CONTACTO:</h2>
+            </div>
+            <form name="formulario" id="enviar_consulta" method="post" action="/enviar.php">
+                <fieldset class="form">
+                    <div class="campo">
+                        <label class="campo__label" for="name"> Nombre </label>
+                        <input class="campo__field" type="text" name="name" id="name"
+                        placeholder="Tu Nombre">
+                    </div> 
+    
+                    <div class="campo">
+                        <label class="campo__label" for="email"> Correo </label>
+                        <input class="campo__field" type="email" name="email" id="email"
+                        placeholder="Tu Email">
+                    </div>
+    
+                    <div class="campo">
+                        <label class="campo__label" for="name"> Mensaje </label>           
+                        <textarea class="campo__field campo__field--textarea" id="Mensaje"></textarea>                          
+                    </div>
+    
+                    <div>
+                        <input type="submit" value="ENVIAR" class="entrada boton--primario">
+                    </div>  
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="datos_empresa">
+            <div class="numero_contacto">
+                <h3>Número de contacto:</h3>
+                <p>928589858</p>
+            </div>
+            <div class="correo_electronico">
+            <h3>Correo electrónico: </h3>
+            <a class="correo" href="#">coffeecatsanddogs@outlook.com</a>
+            </div>
+            <div class="rrss">
+            <h3>Redes Sociales:</h3>
+                <a class="instagram" href="#">Instagram</a>
+                <a class="facebook" href="#">Facebook</a>
+                <a class="twitter" href="#">Twitter</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="enlaces_footer">
+            <h3><a class="enlace_footer" href="#">AVISO LEGAL</a></h3>
+            <h3><a class="enlace_footer" href="#">POLÍTICA DE PRIVACIDAD</a></h3>
+            <h3><a class="enlace_footer" href="#">CAMBIAR CONFIGURACIÓN DE COOKIES</a></h3>
+        </div>
+        <div class="derechos_reservados">
+            <p class="derechos">2022. Todos los derechos reservados.</p>
+        </div>
+        <div class="logos_rrss">
+            <img src="../img/instagram.png" alt="Logo Instagram">
+            <img src="../img/facebook.png" alt="Logo Facebook">
+            <img src="../img/signo-de-twitter.png" alt="Logo Twitter">
+        </div>
+    </footer>
+</body>
+</html>

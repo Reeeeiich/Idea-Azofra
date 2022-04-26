@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Josefin+Sans:wght@300&family=Sarabun:wght@200&display=swap');
+:root{
+    --fuenteprincipal:'Boogaloo', cursive;
+    --fuentesecundaria:'Sarabun', sans-serif;
+    --fuenteterciaria: 'Josefin Sans', sans-serif;
+    --blanco: #fff;
+    --negro:#000;
+    --marron: #693838;
+    --marronclaro: #754545;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  } 
+
+
+  body{
+      font-family:var(--fuenteprincipal);
+      font-size: 18px;
+  }
+
+  /*GLOBALES*/
+.item_nav{
+    text-decoration: none;
+    color: var(--negro);
+    font-family: var(--fuentesecundaria);
+  }
+.item_nav:hover{
+      color: var(--marronclaro);
+      font-size: 24px;
+  }
+
+.navegacion{
+    list-style: none;
+}
+
+.opciones, h3{
+    display: inline;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+/*FOOTER*/
+footer{
+    background-color: var(--marron);
+    padding: 2rem;  
+    color:#fff;  
+   
+}
+
+.enlaces_footer{
+    text-align: center;
+    font-family: var(--fuentesecundaria);
+}
+
+.enlace_footer{
+    margin: 20px;
+    color:white;
+}
+
+.enlace_footer:hover{
+    color: var(--negro);
+}
+
+.derechos{
+    font-size: 18px;
+}
+
+.derechos_reservados{
+    text-align: center;
+    font-family: var(--fuentesecundaria);
+} 
+
+.logos_rrss{
+    display:flex;
+    justify-content: flex-end;
+    gap: 4px; 
+    height: 40px;    
+}
+
+/*INDEX*/
+/*HEADER*/
+.busqueda {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .busqueda:focus {
+    width: 100%;
+  }
+
+.encabezado{
+    background-image: url(../img/header.jpg);
+    padding: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom:0; 
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+
+.contenedor_titulo{
+    display:flex;
+    justify-content: center;
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+}
+
+.titulo_principal{
+    font-family: var(--fuentesecundaria);
+}
+
+.navegacion{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size:18px ;
+    font-weight: bold;
+}
+
+.opciones{
+    padding: 100px;
+}
+
+/*MAIN*/
+.contenedor_imagen2{
+    background-image: url(../img/main.jpg);
+    padding: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display:flex;
+    justify-content:center;
+
+}
+.contenedor_boton{
+    display: flex;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+}
+
+.boton_reserva{
+    font-size: 24px;
+    background: transparent;
+    border: 2px solid var(--negro);
+    border-radius:6px;  
+    
+}
+.boton_reserva:hover{
+    background-color:beige;
+}
+
+.btn:hover{
+    color:var(--negro);
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+/*SEGUNDA PARTE MAIN*/
+.quienes_somos{
+    display:flex;
+    justify-content: center;
+    background-color: var(--marronclaro);
+}
+.imagen{
+    height:30%;
+    width: 50%;
+    margin: 10px;
+}
+
+.primeras_imagenes{
+    display: flex;
+    justify-content: center;  
+    margin-left:15px;
+    
+}
+.segundas_imagenes{
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.titulo2{
+    display: flex;
+    justify-content: center;
+ 
+ }
+
+.contenido_nosotros{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column; 
+}
+
+/*TERCERA PARTE MAIN*/
+
+.titulo_reserva{
+    text-align: center;
+    font-size:40px;
+}
+
+.formulario_cita{
+    font-family:var(--fuentesecundaria);
+    display:flex;
+    justify-content: space-around;
+    border: 2px solid var(--negro);
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.datos_personales{
+    margin:20px;
+    
+}
+
+.contenedor_mapa{
+    margin:20px;
+}
+
+.input_enviar{
+    margin: 20px;
+    text-align: center;
+}
+
+.boton_enviar{
+    background: transparent;
+    border: 2px solid var(--negro);
+    border-radius:6px;
+
+}
+
+.boton_enviar:hover{
+    background:#000;
+    color:#fff;
+    font-size: 25px;
+}
+
+
+/*CARTA*/
+/*HEADER*/
+.carta_main{
+    background-color: rgba(253, 212, 242, 0.584);
+}
+.btn_reserva2{
+    padding: 20px;
+    border:2px;
+    border-radius: 3px;
+    background-color: #693838;
+    display:flex;
+    justify-content: flex-end;    
+}
+
+.boton2{
+    color: var(--negro);
+    border-radius:6px;
+    font-size: 20px;
+    background-color:var(--blanco);
+    border: 2px solid var(--negro);
+    border-radius:6px;
+    text-decoration: none;
+}
+
+.btn2{
+    text-decoration: none;
+    color: var(--marron);
+}
+
+.btn2:hover{
+    color:var(--negro);
+    font-size: 24px;
+}
+
+.contenedor_titulo_carta{
+    font-family: var(--fuentesecundaria);
+    display:flex;
+    justify-content: center;
+}
+
+.opciones_carta{
+    display: block;
+    text-align: center;
+    
+}
+
+.opciones2{
+    display: inline;
+    padding: 50px;
+}
+
+.opcion_carta{
+    font-family:var(--fuenteterciaria);
+    font-weight: bolder;
+    list-style: none;
+    font-size: 20px;
+    list-style-image: url(../img/huella.png);
+}
+
+.contenedor_img2{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.img_opciones2{
+    width:30%;
+}
+
+
+
+/*SERVICIOS*/
+
+.fondo_marron{
+    background-color: var(--marron);
+    padding: 35px;
+}
+
+.parrafos{
+    display: flex;
+    gap: 40px;
+}
+
+.videos_parrafos{
+    display: flex;
+}
+
+.video1, .video2{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo_servicios{
+    text-align: center;
+}
+
+.pregunta_porellos{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.pregunta{
+    background-color:moccasin;
+    border-radius: 4px;
+}
+.pregunta:hover{
+    font-size: 20px;
+    background-color: lemonchiffon;
+
+}
+
+.enlace_pregunta{
+    font-family: var(--fuentesecundaria);
+    font-weight: bolder;
+    color:var(--negro);
+
+}
+
+/*CONTACTO*/
+
+/*FORMULARIO*/
+
+.h2_contacto{
+    font-family: var(--fuentesecundaria);
+}
+.formulario{   
+    position: relative;
+    margin: -5rem auto 0 auto;
+    background-color: white;
+    width: 70%;
+    padding: 5rem;
+    
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    font-family: var(--fuentesecundaria);
+   
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.campo__field{
+    flex: 1rem;
+}
+
+.campo__field--textarea{
+    height: 20rem;
+}
+
+/*RRSS*/
+.numero_contacto{
+    font-family: var(--fuentesecundaria);
+}
+
+.correo_electronico{
+    display:flex;
+    flex-direction: column;
+    font-family: var(--fuentesecundaria);
+}
+
+.rrss{
+    display:flex;
+    flex-direction: column;
+    font-family: var(--fuentesecundaria);
+
+}
+
+.twitter{
+    margin-bottom: 20px;
+}
+
+.numero_contacto{
+    margin-top: 20px;
+}
+
+/*HORARIO*/
+.titulo_horario{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo_h2{
+    font-family: var(--fuentesecundaria);
+}
+.img{
+    width: 20%;
+}
+
+.contenedor_imagenes{
+    display:flex;
+    justify-content: center;
+    gap: 6rem;
+    margin: 2rem;
+}
+
+.horario_reserva{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.horario_animales{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.ubicacion_mapa{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.boton_horario{
+    display: flex;
+    justify-content: center;
+}
+
+.btn_horario{
+    background-color:moccasin;
+    border-radius: 4px;
+}
+
+.btn_horario:hover{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.enlace_btn{
+    color:#000;
+    font-family: var(--fuentesecundaria);
+} 

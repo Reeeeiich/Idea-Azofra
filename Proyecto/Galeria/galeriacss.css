@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+.encabezado{
+    background-color: bisque;
+    padding: 50px;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+    background-color: beige;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Grape Nuts', cursive;
+}
+h1:hover{
+    color:brown;
+}
+.item{
+    background-color: darkgrey;
+    border-radius: 2px;
+    border:solid 1px #000;
+}
+
+.elemento_padre{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding:20px;
+    grid-gap: 10px;
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item:hover .imagen {
+    cursor:pointer;
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
+
+.item:nth-child(4) {
+    grid-column-start: span 2;
+}
+
+.item:nth-child(5){
+    grid-row-start: span 2;
+}
+
+.item:nth-child(8) {
+    grid-row-start: span 2;
+}
+.item:nth-child(9) {
+    grid-column-start: span 2;
+
+}
+.item:nth-child(10) {
+    grid-column-start: span 2;
+}
+@media (max-width: 480px) {
+    .elemento_padre{
+        grid-template-columns: repeat(2 ,1fr);
+    }
+
+    .item:nth-child(2) {
+        grid-row-start: span 2;
+    }
+    .item:nth-child(8) {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .elemento_padre{
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+    .item:nth-child(2) {
+        grid-column-start: span 2;
+    }
+    .item:nth-child(4) {
+        grid-column-start: span 3;
+    }
+    
+    .item:nth-child(5){
+        grid-row-start: span 4;
+    }
+    
+    .item:nth-child(8) {
+        grid-row-start: span 3;
+    }
+    .item:nth-child(9) {
+        grid-column-start: span 2;
+    
+    }
+    .item:nth-child(10) {
+        grid-column-start: span 2;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .elemento_padre{
+        grid-template-columns: repeat(5, 1fr);
+
+    }
+    .item:nth-child(2) {
+        grid-column-start: span 2;
+    }
+
+    .item:nth-child(3) {
+        grid-column-start: span 2;
+    }
+    .item:nth-child(4) {
+        grid-column-start: span 2;
+    }
+    .item:nth-child(5){
+        grid-row-start: span 2;
+    }
+    
+    .item:nth-child(6) {
+        grid-column-start: span 2;
+    }
+    .item:nth-child(8) {
+        grid-row-start: span 1;
+    }
+    .item:nth-child(9) {
+        grid-column-start: span 2;
+    }
+    .item:nth-child(10) {
+        grid-column-start: span 5;
+    }
+
+}
+
+@media (min-width: 1480px ) {
+    .elemento_padre{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .item:nth-child(9){
+        grid-row-start: span 2;
+    }
+    .item:nth-child(10){
+        grid-column-start: span 3;
+    }
+}
+
+
+@media (min-width: 1020px) {
+    footer{
+        background-color: #000;
+        padding: 2rem;  
+        color:#fff;  
+       
+    }
+    
+    .enlaces_footer{
+       display: flex;
+       justify-content: center;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .enlace_footer{
+        margin: 20px;
+        color:white;
+    }
+    
+    .enlace_footer:hover{
+        color: var(--negro);
+    }
+    
+    .derechos{
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+        
+}
+
+@media (max-width: 1020px) {
+    footer{
+        background-color: #000;
+        padding: 2rem;  
+        color:#fff;  
+       
+    }
+    .enlaces_footer{
+        display: flex;
+        flex-direction: column;
+     }
+     
+     a{
+         text-decoration: none;
+     }
+     
+     .enlace_footer{
+         margin: 20px;
+         color:white;
+     }
+     
+     .enlace_footer:hover{
+         color: var(--negro);
+     }
+     
+     .derechos{
+         font-size: 18px;
+         display: flex;
+         justify-content: center;
+         margin-top: 40px;
+     }
+
+}
+
+@media (max-width: 490px ) {
+    footer{
+        background-color: #000;
+        padding: 2rem;  
+        color:#fff;  
+       
+    }
+    .enlaces_footer{
+        display: flex;
+    
+     }    
+     a{
+
+         text-decoration: none;
+         font-size: 12px;  
+     }
+     
+     .enlace_footer{
+         
+         color:white;
+     }
+     
+     .enlace_footer:hover{
+         color: var(--negro);
+     }
+     
+     .derechos{
+         font-size: 12px;
+         display: flex;
+         justify-content: center;
+         margin-top: 40px;
+     }
+
+}   
