@@ -15,6 +15,8 @@ html{
 
 *, *:before, *:after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
   } 
 
 
@@ -124,7 +126,7 @@ footer{
 }
 
 .titulo_principal{
-    font-family: var(--fuentesecundaria);
+    font-family: var(--fuenteprincipal);
 }
 
 .navegacion{
@@ -260,8 +262,22 @@ footer{
 
 /*CARTA*/
 /*HEADER*/
+.primer_titulo{
+    text-align: center;
+}
+.header_carta{
+    background-image: url(../img/fondo_header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navegacion{
+    background-color: var(--blanco);
+}
 .carta_main{
-    background-color: rgba(253, 212, 242, 0.584);
+    background-image: url(../img/fondo_main.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
 }
 .btn_reserva2{
     padding: 20px;
@@ -315,6 +331,7 @@ footer{
     list-style: none;
     font-size: 20px;
     list-style-image: url(../img/huella.png);
+    margin-left: 30px;
 }
 
 .contenedor_img2{
@@ -342,13 +359,18 @@ footer{
 /*SERVICIOS*/
 
 .fondo_marron{
-    background-color: var(--marron);
+    background-color: var(--marron);  
     padding: 35px;
+   
 }
 
 .parrafos{
     display: flex;
-    gap: 40px;
+}
+
+.parrafo1, .parrafo2{
+    margin: 5px;
+    text-justify: auto;
 }
 
 .videos_parrafos{
@@ -393,6 +415,7 @@ footer{
 
 .h2_contacto{
     font-family: var(--fuentesecundaria);
+    margin-bottom: 20px;
 }
 .formulario{   
     position: relative;
@@ -402,17 +425,42 @@ footer{
     padding: 5rem;
     
 }
+
+.form{
+    background-color: beige;
+}
 .campo{
     display: flex;
     margin-bottom: 2rem;
     font-family: var(--fuentesecundaria);
    
 }
+.numero_contacto, .correo_electronico, .rrss{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#name.campo__field, #email.campo__field, #Mensaje.campo__field--textarea {
+    padding: 15px;
+    background-color: antiquewhite;
+    font-family: var(--fuentesecundaria);
+}
+#name.campo__field:hover, #email.campo__field:hover, #Mensaje.campo__field--textarea:hover{
+    background-color: blanchedalmond;
+}
+#name.campo__field, #email.campo__field, #Mensaje.campo__field--textarea{
+    margin-right: 20px;
+}
 
 .campo__label{
     flex: 0 0 9rem;
-    text-align: right;
+    text-align: center;
     padding-right: 2rem;
+    margin-top: 15px;
+}
+
+#name.campo__field{
+    margin-top: 10px;
 }
 
 .campo__field{
@@ -422,6 +470,16 @@ footer{
 .campo__field--textarea{
     height: 20rem;
 }
+.entrada.boton--primario{
+    border-radius: 10px;
+    background-color: bisque;
+    padding: 15px;
+    margin: 20px;
+}
+.boton_enviar--form{
+    text-align: right;
+}
+
 
 /*RRSS*/
 .numero_contacto{
@@ -457,6 +515,8 @@ footer{
 
 .titulo_h2{
     font-family: var(--fuentesecundaria);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .img{
     width: 20%;
@@ -494,6 +554,8 @@ footer{
 .btn_horario{
     background-color:moccasin;
     border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .btn_horario:hover{

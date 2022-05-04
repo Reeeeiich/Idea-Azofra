@@ -10,8 +10,11 @@
     <title>Contacto</title>
 </head>
 <body>
-    <header><h1>Coffee Dogs&Cats</h1>
-        <hr>
+    <header>
+        <h1 class="primer_titulo">Coffee Dogs&Cats</h1>
+        <div class="logo">
+            <img class= "logo_cafeteria" src="../img/taza-de-cafe-caliente-redondeada-en-un-plato-de-vista-lateral.png" alt="logo cafeteria">
+        </div>
         <div class="fondo_marron"> </div>
         <nav class="navegacion">
             <ul class="navegador">
@@ -21,7 +24,7 @@
                 <li class="opciones"><a class="item_nav" href="../pages/contacto.html">Contacto</a></li>
                 <li class="opciones"><a class="item_nav" href="../pages/horario.html">Horario</a></li>
             </ul>
-        </nav>   
+        </nav>  
     </header>
     <main>
         <div class="formulario_consulta">
@@ -44,10 +47,10 @@
     
                     <div class="campo">
                         <label class="campo__label" for="name"> Mensaje </label>           
-                        <textarea class="campo__field campo__field--textarea" id="Mensaje"></textarea>                          
+                        <textarea class="campo__field campo__field--textarea" id="Mensaje" placeholder="Escriba su mensaje..."></textarea>                          
                     </div>
     
-                    <div>
+                    <div class="boton_enviar--form">
                         <input type="submit" value="ENVIAR" class="entrada boton--primario">
                     </div>  
                 </fieldset>
