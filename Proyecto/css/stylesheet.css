@@ -30,10 +30,12 @@ html{
     text-decoration: none;
     color: var(--negro);
     font-family: var(--fuentesecundaria);
+
   }
 .item_nav:hover{
-      color: var(--marronclaro);
-      font-size: 24px;
+    text-decoration: none;
+    color: var(--marronclaro);
+    font-size: 24px;
   }
 
 .navegacion{
@@ -276,7 +278,7 @@ footer{
 .carta_main{
     background-image: url(../img/fondo_main.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     
 }
 .btn_reserva2{
@@ -357,11 +359,15 @@ footer{
   }
 
 /*SERVICIOS*/
+.header_servicios{
+    background-image:url(../img/fondo_servicios.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .fondo_marron{
     background-color: var(--marron);  
     padding: 35px;
-   
 }
 
 .parrafos{
@@ -384,6 +390,7 @@ footer{
 
 .titulo_servicios{
     text-align: center;
+    margin:20px;
 }
 
 .pregunta_porellos{
@@ -393,9 +400,11 @@ footer{
 }
 
 .pregunta{
+    padding: 10px;
     background-color:moccasin;
     border-radius: 4px;
 }
+
 .pregunta:hover{
     font-size: 20px;
     background-color: lemonchiffon;
@@ -410,24 +419,31 @@ footer{
 }
 
 /*CONTACTO*/
-
 /*FORMULARIO*/
-
+.header_contacto{
+    background-image: url(../img/header_contacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .h2_contacto{
     font-family: var(--fuentesecundaria);
-    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 .formulario{   
     position: relative;
     margin: -5rem auto 0 auto;
     background-color: white;
     width: 70%;
-    padding: 5rem;
-    
+    padding: 5rem;    
+
 }
 
 .form{
     background-color: beige;
+    margin: 10px;
 }
 .campo{
     display: flex;
@@ -448,6 +464,7 @@ footer{
 #name.campo__field:hover, #email.campo__field:hover, #Mensaje.campo__field--textarea:hover{
     background-color: blanchedalmond;
 }
+
 #name.campo__field, #email.campo__field, #Mensaje.campo__field--textarea{
     margin-right: 20px;
 }
@@ -476,6 +493,12 @@ footer{
     padding: 15px;
     margin: 20px;
 }
+
+.entrada.boton--primario:hover{
+    background-color:burlywood;
+    font-weight: bolder;
+}
+
 .boton_enviar--form{
     text-align: right;
 }
@@ -508,6 +531,11 @@ footer{
 }
 
 /*HORARIO*/
+.header_horario{
+    background-image: url(../img/fondo_horario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .titulo_horario{
     display: flex;
     justify-content: center;
