@@ -278,8 +278,7 @@ footer{
 .carta_main{
     background-image: url(../img/fondo_main.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;    
 }
 .btn_reserva2{
     padding: 20px;
