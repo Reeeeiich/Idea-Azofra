@@ -2,7 +2,7 @@
 <h2> El logo de la página es: </h2>
 <img src=https://github.com/Reeeeiich/Idea-Azofra/blob/master/Proyecto/img/taza-de-cafe-caliente-redondeada-en-un-plato-de-vista-lateral.png alt="taza"
 <p> Proyecto final de CODERHOUSE sobre una cafetería petfriendly, donde podemos estar en contacto con animales y con opción a adoptarlos. </p>
-<p>El proyecto está siendo creado con HTML, CSS, Bootstrap y full responsive...</p> 
+<p>El proyecto está siendo creado con HTML, CSS, Bootstrap, SASS y full responsive...</p> 
 <p>El proyecto se divide en 5 sesiones.</p>
 <ul>
   <li>Index: Inicio de la página web donde encontramos una breve información de lo que va el emprendimiento y fotos con flex y un formulario para pedir cita y un mapa iframe de dónde esta localizado.</li> 
