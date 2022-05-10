@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Dosis:wght@300&display=swap");
+/*variables*/
+/*Mixin*/
+/*Globales*/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.6rem;
+}
+body.fijar-body {
+  overflow: hidden;
+}
+
+p {
+  font-size: 2rem;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+.bg-aqua {
+  background-color: #6dbdaa;
+}
+
+.bg-lima {
+  background-color: #C6D736;
+}
+
+.contenedor {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.logo {
+  justify-content: center;
+}
+
+.header {
+  background-image: url(./img/fondo_header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header .contenido-header {
+  padding: 25px 0;
+}
+@media (min-width: 768px) {
+  .header .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header h1 {
+  color: 900;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header h1 {
+    margin-bottom: 0;
+  }
+}
+.header.fijo {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0.3rem 0.4rem #444;
+}
+
+.navegacion-principal {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.navegacion-principal a {
+  color: #000;
+  font-size: 2rem;
+}
+.navegacion-principal a:hover {
+  color: #C6D736;
+}
+
+/*Tickets*/
+.tickets {
+  padding: 50px 0;
+}
+.tickets h3 {
+  text-align: center;
+  color: #FFF;
+}
+.tickets .contenedor-tickets {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+.tickets .plan p {
+  color: #FFF;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pase {
+  width: 100%;
+  border-spacing: 0;
+}
+.pase thead {
+  background-color: #FFB0F2;
+}
+.pase thead th {
+  padding: 12.5px;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.pase tbody {
+  background-color: #FFF;
+}
+.pase tbody td {
+  padding: 12.5px;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: center;
+  font-weight: 700;
+}
+.pase tbody tr:last-of-type td {
+  border: none;
+}
+.pase tfoot {
+  background-color: #D841FB;
+}
+.pase tfoot td {
+  padding: 12.5px;
+  text-align: center;
+  font-size: 3rem;
+  color: #FFF;
+}
+
+.actuaciones {
+  background-color: #FFB0F2;
+  padding: 50px 0;
+}
+.actuaciones h3, .actuaciones p {
+  text-align: center;
+  color: #FFF;
+}
+.actuaciones .dia {
+  text-transform: uppercase;
+  margin: 50px 0;
+}
+
+.calendario {
+  padding: 0;
+  list-style: none;
+}
+.calendario li {
+  padding: 25px;
+  font-weight: 700;
+}
+.calendario li span {
+  font-weight: 400;
+}
+
+.bg-aqua .calendario li:nth-child(odd) {
+  background-color: #4daa94;
+}
+
+.bg-lima .calendario li:nth-child(odd) {
+  background-color: #a6b624;
+}
+
+/*Footer*/
+footer {
+  background-color: #FFB0F2;
+  font-weight: 900;
+  padding: 12.5px;
+  text-align: center;
+}
+footer p {
+  color: #FFF;
+  margin: 0;
+}
+
+/*# sourceMappingURL=estilos.css.map */
