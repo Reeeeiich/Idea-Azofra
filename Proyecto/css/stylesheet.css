@@ -90,6 +90,31 @@ footer{
 
 /*INDEX*/
 /*HEADER*/
+.contenedor_concierto{
+    display:flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.concierto {
+    padding: 2rem;
+    background-color: transparent;
+    border-color: var(--marronclaro);
+    border-radius: 1rem; 
+    font-family: var(--fuentesecundaria);
+}
+
+.concierto:hover{
+    font-weight: bolder;
+    font-size: 22px;
+}
+.concierto a {
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
 .busqueda {
     width: 130px;
     box-sizing: border-box;

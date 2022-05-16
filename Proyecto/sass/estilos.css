@@ -65,6 +65,39 @@ h3 {
   margin: 0 auto;
 }
 
+/*HEADER*/
+.boton-basico, .boton-seleccion {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.button-basic, .button-select {
+  background-color: white;
+  border: 2px solid #FFB0F2;
+  padding: 15px 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.button-basic a, .button-select a {
+  color: black;
+  font-size: 16px;
+}
+
+.button-basic:hover, .button-select:hover {
+  font-weight: 700;
+}
+
+.boton-seleccion {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.button-select {
+  background-color: #D841FB;
+  border-radius: 10px;
+}
+
 .logo {
   justify-content: center;
 }
@@ -85,7 +118,7 @@ h3 {
   }
 }
 .header h1 {
-  color: 900;
+  color: black;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -170,6 +203,7 @@ h3 {
   color: #FFF;
 }
 
+/*CARTELES*/
 .actuaciones {
   background-color: #FFB0F2;
   padding: 50px 0;
@@ -204,6 +238,32 @@ h3 {
 }
 
 /*Footer*/
+.twitter, .instagram, .facebook {
+  margin-top: 2rem;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  color: #51aff8;
+  padding: 20px;
+  background-color: transparent;
+  margin-left: 2rem;
+  border-color: #51aff8;
+}
+
+.twitter:hover, .instagram:hover, .facebook:hover {
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.facebook {
+  color: #2956a3;
+  border-color: #2956a3;
+}
+
+.instagram {
+  color: #EA209E;
+  border-color: #EA209E;
+}
+
 footer {
   background-color: #FFB0F2;
   font-weight: 900;
