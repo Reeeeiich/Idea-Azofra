@@ -10,5 +10,5 @@
   <li>Servicios: Videos iframes, y botón que lleva a una galería de grids. </li>
   <li>Contacto: Formulario de contacto y RRSS. </li>
   <li>Horario: Información básica sobre la empresa y botones que te llevan a diferentes apartados de la página. </li>
-  <li> Concierto: Información sobre el concierto de apertura, precio de los tickets y carteles de las bandas que tocan y comediantes </li>
+  <li> Concierto: Información sobre el concierto de apertura, precio de los tickets y carteles de las bandas que tocan y comediantes. </li>
 </ul>
