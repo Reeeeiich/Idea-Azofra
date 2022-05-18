@@ -1,8 +1,23 @@
 /*INDEX responsive*/
+@media (max-width: 380px) {
+    .encabezado, .contenedor_imagen2{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+   footer{
+       width: 100%;
+       background-size: cover;
+    
+   }
+}
+
 @media (max-width: 1024px) {
    .encabezado{
        display:grid;
        justify-content: center;
+       
    }
     .busqueda{
         width: 140px;
