@@ -4,13 +4,20 @@
         padding-right: 0;
         padding-left: 0;
     }
+    .campo__label{
+        margin-left: 20px;
+    }
+   
+    .opciones_carta{
+        margin-bottom: 20px;
+    }
 
-
-   footer{
-       width: 100%;
-       background-size: cover;
-    
-   }
+    .video1{
+        margin-left: 5px;
+    }
+    .video2{
+        margin-right: 5px;
+    }
 }
 
 @media (max-width: 1024px) {
