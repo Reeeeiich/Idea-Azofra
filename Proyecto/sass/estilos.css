@@ -51,12 +51,12 @@ h3 {
   font-size: 3rem;
 }
 
-.bg-aqua {
-  background-color: #6dbdaa;
+.bg-beige {
+  background-color: #bdaca1;
 }
 
-.bg-lima {
-  background-color: #C6D736;
+.bg-hueso {
+  background-color: #e6cbac;
 }
 
 .contenedor {
@@ -74,14 +74,15 @@ h3 {
 
 .button-basic, .button-select {
   background-color: white;
-  border: 2px solid #FFB0F2;
+  border: 2px solid #c4a867;
   padding: 15px 30px;
   text-align: center;
   cursor: pointer;
 }
 .button-basic a, .button-select a {
+  font-size: 18px;
+  font-family: "Dosis", sans-serif;
   color: black;
-  font-size: 16px;
 }
 
 .button-basic:hover, .button-select:hover {
@@ -94,7 +95,7 @@ h3 {
 }
 
 .button-select {
-  background-color: #D841FB;
+  background-color: #c4a867;
   border-radius: 10px;
 }
 
@@ -143,7 +144,7 @@ h3 {
   font-size: 2rem;
 }
 .navegacion-principal a:hover {
-  color: #C6D736;
+  color: #e6cbac;
 }
 
 /*Tickets*/
@@ -172,7 +173,7 @@ h3 {
   border-spacing: 0;
 }
 .pase thead {
-  background-color: #FFB0F2;
+  background-color: #c4a867;
 }
 .pase thead th {
   padding: 12.5px;
@@ -194,7 +195,7 @@ h3 {
   border: none;
 }
 .pase tfoot {
-  background-color: #D841FB;
+  background-color: rgba(164, 77, 40, 0.8823529412);
 }
 .pase tfoot td {
   padding: 12.5px;
@@ -205,7 +206,7 @@ h3 {
 
 /*CARTELES*/
 .actuaciones {
-  background-color: #FFB0F2;
+  background-color: #c4a867;
   padding: 50px 0;
 }
 .actuaciones h3, .actuaciones p {
@@ -229,12 +230,12 @@ h3 {
   font-weight: 400;
 }
 
-.bg-aqua .calendario li:nth-child(odd) {
-  background-color: #4daa94;
+.bg-beige .calendario li:nth-child(odd) {
+  background-color: #a89283;
 }
 
-.bg-lima .calendario li:nth-child(odd) {
-  background-color: #a6b624;
+.bg-hueso .calendario li:nth-child(odd) {
+  background-color: #dab285;
 }
 
 /*Footer*/
@@ -265,7 +266,7 @@ h3 {
 }
 
 footer {
-  background-color: #FFB0F2;
+  background-color: #e6cbac;
   font-weight: 900;
   padding: 12.5px;
   text-align: center;

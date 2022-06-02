@@ -3,10 +3,10 @@
 $fuentePrincipal :'Dosis', sans-serif;
 
 // Colores
-$aqua: #6dbdaa;
-$rosa: #FFB0F2;
-$lima: #C6D736;
-$morado: #D841FB;
+$beige: #bdaca1;
+$beige2: #c4a867;
+$hueso: #e6cbac;
+$marron: #a44d28e1;
 $negro: #000;
 $blanco: #FFF;
 
@@ -104,11 +104,11 @@ h3 {
     font-size: 3rem;
 }
 
-.bg-aqua {
-    background-color: $aqua;
+.bg-beige {
+    background-color: $beige;
 }
-.bg-lima {
-    background-color: $lima;
+.bg-hueso {
+    background-color: $hueso;
 }
 
 .contenedor {
@@ -125,14 +125,15 @@ h3 {
 }
 .button-basic{
     background-color: white;
-    border: 2px solid $rosa;
+    border: 2px solid $beige2;
     padding: 15px 30px;
     text-align: center;
     cursor: pointer;
 
     a{
+        font-size: 18px;
+        font-family: $fuentePrincipal;
         color:black;
-        font-size: 16px;
     }
 }
 
@@ -149,7 +150,7 @@ h3 {
 
 .button-select  {
     @extend .button-basic;
-    background-color: $morado;
+    background-color: $beige2;
     border-radius: 10px;
   }
 
@@ -197,7 +198,7 @@ h3 {
         color: $negro;
         font-size: 2rem;
         &:hover {
-            color: $lima;
+            color: $hueso;
         }
     }
 }
@@ -229,7 +230,7 @@ h3 {
     width: 100%;
     border-spacing: 0;
     thead {
-        background-color: $rosa;
+        background-color: $beige2;
         th {
 
             padding: calc($separacion / 4);
@@ -258,7 +259,7 @@ h3 {
         }
     }
     tfoot {
-        background-color: $morado;
+        background-color: $marron;
 
         td {
             padding: calc($separacion / 4);
@@ -270,7 +271,7 @@ h3 {
 }
 /*CARTELES*/
 .actuaciones {
-    background-color: $rosa;
+    background-color: $beige2;
     padding: $separacion 0;
 
     h3, p {
@@ -298,12 +299,12 @@ h3 {
 }
 
 
-.bg-aqua .calendario li:nth-child(odd) {
-    background-color: darken($aqua, 10);
+.bg-beige .calendario li:nth-child(odd) {
+    background-color: darken($beige, 10);
 }
 
-.bg-lima .calendario li:nth-child(odd) {
-    background-color: darken($lima, 10);
+.bg-hueso .calendario li:nth-child(odd) {
+    background-color: darken($hueso, 10);
 }
 
 /*Footer*/
@@ -338,7 +339,7 @@ h3 {
 }
 
 footer {
-    background-color: $rosa;
+    background-color: $hueso;
     font-weight: map-get($negrita, bolder );
     padding: calc($separacion / 4);
     text-align: center;

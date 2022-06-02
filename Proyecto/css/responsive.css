@@ -20,6 +20,14 @@
     }
 }
 
+@media (min-width: 768px) {
+    .concierto,
+    .concierto:after {
+      width: 200px;
+      height: 86px;
+      line-height: 88px;
+    }
+  }
 @media (max-width: 1024px) {
    .encabezado{
        display:grid;
@@ -88,6 +96,32 @@
 
 }
 
+@media (max-width: 480px) {
+    .imagen3{
+        margin-top: 40px;
+    }
+
+    .primeras_imagenes {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 40px;
+    }
+
+    .segundas_imagenes{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 40px;
+    }
+
+    .imagen{
+        width: 100%;
+        height: 100%;
+
+    }
+
+}
 @media (max-width:1400px ) {
     .navegador{
         padding: 0;
