@@ -21,6 +21,29 @@ h1:hover{
     cursor: pointer;
     color:brown;
 }
+
+.enlace_boton{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+.boton_contenedor{
+    display:flex;
+    justify-content: flex-end;
+}
+.boton {
+    margin-top: 15px;
+    padding: 15px;
+    border-color: #b96749ee;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #db9334 inset, 0 0 0 0 #dbca34;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .boton:hover {
+    box-shadow: 0 0 10px 0 #db9b34 inset, 0 0 10px 4px #b7622e;
+  }
 .item{
     background-color: darkgrey;
     border-radius: 2px;
@@ -80,6 +103,7 @@ h1:hover{
 }
 
 @media (min-width: 768px) {
+   
     .elemento_padre{
         grid-template-columns: repeat(4, 1fr);
 
@@ -191,6 +215,10 @@ h1:hover{
 }
 
 @media (max-width: 1020px) {
+    .boton_contenedor{
+        display:flex;
+        justify-content: center;
+    }
     footer{
         background-color: #000;
         padding: 2rem;  
